@@ -45,6 +45,10 @@ public class PlayerController : MonoBehaviour
 			  player.AddForce(0, 0, -speed * Time.deltaTime);
 		 
 		 }
+		 if (Input.GetKey("escape"))
+		 {
+				SceneManager.LoadScene("menu");
+		 }
 	}
 
 	void OnTriggerEnter(Collider other)
